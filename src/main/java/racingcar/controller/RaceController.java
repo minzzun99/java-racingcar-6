@@ -1,8 +1,7 @@
 package racingcar.controller;
 
 import static racingcar.service.CarMove.moveCar;
-import static racingcar.service.RaceResult.roundResult;
-import static racingcar.service.RaceResult.setWinnerList;
+import static racingcar.service.RaceResult.*;
 import static racingcar.view.InputView.*;
 import static racingcar.view.OutputView.*;
 import static racingcar.view.message.RaceMessage.*;
