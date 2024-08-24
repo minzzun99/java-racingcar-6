@@ -12,7 +12,6 @@ public class InputView {
         return Console.readLine().replaceAll("\\s", "");        // 공백제거
     }
 
-
     // 레이스의 시도 횟수를 입력받는 메서드
     public static String inputNumberOfRace() {
         printRaceMessage(NUMBER_OF_RACE_INPUT);
