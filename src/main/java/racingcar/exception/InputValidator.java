@@ -3,21 +3,21 @@ package racingcar.exception;
 import static racingcar.exception.message.ErrorMessage.*;
 
 public class InputValidator {
-    public static void carNameInputLineValid(String line) {
+    public void carNameInputLineValid(String line) {
         // 자동차 이름을 입력받는 줄에 쉼표가 있는지 검증
         if (!line.contains(",")) {
             throw new IllegalArgumentException(String.valueOf(NOT_CONTAINS_COMMA_ERROR));
         }
     }
 
-    public static void carNameInputValid(String name) {
+    public void carNameInputValid(String name) {
         // 자동차 이름이 5자 이하인지 확인
         if (name.length() > 5) {
             throw new IllegalArgumentException(String.valueOf(CAR_NAME_LENGTH_ERROR));
         }
     }
 
-    public static void inputNumberOfRaceValid(String str) {
+    public void inputNumberOfRaceValid(String str) {
         // 입력받은 문자열이 숫자가 맞는지
         boolean isNumeric = str.matches("[+-]?\\d*(\\.\\d+)?");
         if (!isNumeric) {
